@@ -1,0 +1,5 @@
+body { font-family: Arial; background: #111; color:#fff; text-align:center; }
+#videoContainer { position:relative; display:inline-block; }
+#overlay { position:absolute; top:0; left:0; width:1000px; height:562px; cursor:crosshair; }
+#controls { margin-top:20px; }
+button { margin:5px; padding:10px 20px; font-size:16px; cursor:pointer; }
