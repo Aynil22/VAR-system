@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro VAR System - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+</head>
+<body>
+<h1>Pro VAR System - Dashboard</h1>
+<div id="videoContainer">
+  <video id="varVideo" width="1000" controls crossorigin="anonymous">
+    <source src="assets/wedstrijd.mp4" type="video/mp4">
+  </video>
+  <canvas id="overlay"></canvas>
+</div>
+<div id="controls">
+  <button id="slowMoBtn">Slow Motion</button>
+  <button id="normalBtn">Normaal</button>
+  <button id="frameBackBtn">Frame Back</button>
+  <button id="frameForwardBtn">Frame Forward</button>
+  <button id="decisionBtn">Beslissing genomen</button>
+</div>
+<p>Klik op de verdedigende speler om het muurtje te activeren.</p>
+<script src="main.js"></script>
+</body>
+</html>
